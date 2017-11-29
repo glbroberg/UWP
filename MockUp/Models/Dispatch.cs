@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -19,9 +20,9 @@ namespace MockUp.Models
     public class DispatchManger
     {
 
-        public static List<Dispatch> GetDispatches()
+        public static ObservableCollection<Dispatch> GetDispatches()
         {
-            var dispatches = new List<Dispatch>();
+            var dispatches = new ObservableCollection<Dispatch>();
 
             dispatches.Add(new Dispatch
             {

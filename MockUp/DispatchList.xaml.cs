@@ -1,5 +1,7 @@
-﻿using System;
+﻿using MockUp.Models;
+using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
@@ -20,11 +22,16 @@ namespace MockUp
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class DisbatchListPage : Page
+    public sealed partial class DispatchList : Page
     {
-        public DisbatchListPage()
+        private ObservableCollection<Dispatch> Dispatches;
+
+
+        public DispatchList()
         {
             this.InitializeComponent();
+            Dispatches = DispatchManger.GetDispatches();
+
         }
     }
 }

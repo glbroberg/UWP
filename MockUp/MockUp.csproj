@@ -95,14 +95,17 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="DispatchListPage.xaml.cs">
-      <DependentUpon>DispatchListPage.xaml</DependentUpon>
+    <Compile Include="DispatchList.xaml.cs">
+      <DependentUpon>DispatchList.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="MapPage.xaml.cs">
       <DependentUpon>MapPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MapView.xaml.cs">
+      <DependentUpon>MapView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Models\Dispatch.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -128,7 +131,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="DispatchListPage.xaml">
+    <Page Include="DispatchList.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -137,6 +140,10 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="MapPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MapView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
